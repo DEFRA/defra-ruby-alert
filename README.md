@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/DEFRA/defra-ruby-alert.svg?branch=master)](https://travis-ci.com/DEFRA/defra-ruby-alert)
 [![security](https://hakiri.io/github/DEFRA/defra-ruby-alert/master.svg)](https://hakiri.io/github/DEFRA/defra-ruby-alert/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/071265a0d6f45606290f/maintainability)](https://codeclimate.com/github/DEFRA/defra-ruby-alert/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/071265a0d6f45606290f/test_coverage)](https://codeclimate.com/github/DEFRA/defra-ruby-alert/test_coverage)
 [![Gem Version](https://badge.fury.io/rb/defra_ruby_alert.svg)](https://badge.fury.io/rb/defra_ruby_alert)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
