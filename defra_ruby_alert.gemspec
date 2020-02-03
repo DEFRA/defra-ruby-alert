@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   end
 
   # Alert catches exceptions, sends them to our Errbit instances
-  spec.add_dependency "airbrake", "~> 5.3.0"
+  spec.add_dependency "airbrake", "~> 5.8.1"
 
   spec.add_development_dependency "defra_ruby_style"
   # Shim to load environment variables from a .env file into ENV
