@@ -18,10 +18,16 @@ It's aim is to help us
 
 ## Installation
 
-Add this line to your application's Gemfile
+This gem is intended to replace directly referencing and managing the [Airbrake gem](https://github.com/airbrake/airbrake-ruby) in our services. However our services require different versions of Airbrake due to the versions of Ruby they depend on. So if like the [Flood Risk Activity Exemptions service](https://github.com/DEFRA/ruby-services-team/tree/master/services/frae) you are using Ruby 2.3 and need Airbrake version 5.3 add this line to your application's Gemfile
 
 ```ruby
-gem "defra_ruby_alert"
+gem "defra_ruby_alert", "~> 0.1.0"
+```
+
+If like the [Waste Exemptions](https://github.com/DEFRA/ruby-services-team/tree/master/services/wex) and [Waste Carriers](https://github.com/DEFRA/ruby-services-team/tree/master/services/wcr) services you are using Ruby 2.4 and need Airbrake version 5.8 add this line to your application's Gemfile
+
+```ruby
+gem "defra_ruby_alert", "~> 1.0.0"
 ```
 
 And then update your dependencies by calling
