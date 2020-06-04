@@ -41,12 +41,6 @@ module DefraRuby
         end
 
         context "when airbrake is enabled" do
-          it "registers an 'at_exit' hook" do
-            expect(described_class).to receive(:at_exit)
-
-            described_class.invoke
-          end
-
           it "does not tell Airbrake to ignore everything" do
             expect(Airbrake).not_to receive(:add_filter)
 
@@ -56,12 +50,6 @@ module DefraRuby
 
         context "when airbrake is not enabled" do
           let(:enabled) { false }
-
-          it "does not register an 'at_exit' hook" do
-            expect(described_class).to receive(:at_exit).never
-
-            described_class.invoke
-          end
 
           it "tells Airbrake to ignore everything" do
             expect(Airbrake).to receive(:add_filter) { |&block| expect(block).to be(&:ignore!) }

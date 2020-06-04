@@ -9,12 +9,7 @@ module DefraRuby
       def self.invoke
         configure
 
-        if DefraRuby::Alert.configuration.enabled
-          # Register an `at_exit` hook that runs when the host app shuts down
-          at_exit { perform_at_exit }
-
-          return
-        end
+        return if DefraRuby::Alert.configuration.enabled
 
         # Unfortunately the airbrake initializer errors if project_key is not set. The
         # problem is that the initializer is fired in scenarios where we are not
@@ -24,13 +19,6 @@ module DefraRuby
         # variables have not been set. As such we need a way to disable using Airbrake
         # unless we actually need it.
         Airbrake.add_filter(&:ignore!)
-      end
-
-      private_class_method def self.perform_at_exit
-        Airbrake.close
-      rescue StandardError => e
-        puts "Airbrake reported an error when closing. \
-              Its probaly fine and just because there were no errors to report: #{e.message}"
       end
 
       private_class_method def self.configure
