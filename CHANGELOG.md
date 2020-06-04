@@ -1,6 +1,19 @@
 # Changelog
 
-## [v1.0.0](https://github.com/defra/defra-ruby-alert/tree/v1.0.0) (2020-02-03)
+## [v2.0.0](https://github.com/defra/defra-ruby-alert/tree/v2.0.0) (2020-06-04)
+
+[Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v1.0.0...v2.0.0)
+
+**Implemented enhancements:**
+
+- Update airbrake version to be compatible with latest rails and ruby [\#8](https://github.com/DEFRA/defra-ruby-alert/pull/8) ([cintamani](https://github.com/cintamani))
+
+**Merged pull requests:**
+
+- Use multiple rubocop formats in Travis build [\#7](https://github.com/DEFRA/defra-ruby-alert/pull/7) ([Cruikshanks](https://github.com/Cruikshanks))
+- Switch to SonarCloud from CodeClimate [\#6](https://github.com/DEFRA/defra-ruby-alert/pull/6) ([Cruikshanks](https://github.com/Cruikshanks))
+
+## [v1.0.0](https://github.com/defra/defra-ruby-alert/tree/v1.0.0) (2020-02-04)
 
 [Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v0.1.0...v1.0.0)
 
