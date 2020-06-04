@@ -30,6 +30,12 @@ If like the [Waste Exemptions](https://github.com/DEFRA/ruby-services-team/tree/
 gem "defra_ruby_alert", "~> 1.0.0"
 ```
 
+If you need a version of the gem that works with Ruby 2.7 and Rails 6, and has version 10.0.4 of Airbrake (latest versions at time of writing) add this line to your application's Gemfile
+
+```ruby
+gem "defra_ruby_alert", "~> 2.0.0"
+```
+
 And then update your dependencies by calling
 
 ```bash
