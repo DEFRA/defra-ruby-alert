@@ -1,9 +1,9 @@
 # Defra Ruby Alert
 
-[![Build Status](https://travis-ci.com/DEFRA/defra-ruby-alert.svg?branch=master)](https://travis-ci.com/DEFRA/defra-ruby-alert)
+[![Build Status](https://travis-ci.com/DEFRA/defra-ruby-alert.svg?branch=main)](https://travis-ci.com/DEFRA/defra-ruby-alert)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_defra-ruby-alert&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_defra-ruby-alert)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_defra-ruby-alert&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_defra-ruby-alert)
-[![security](https://hakiri.io/github/DEFRA/defra-ruby-alert/master.svg)](https://hakiri.io/github/DEFRA/defra-ruby-alert/master)
+[![security](https://hakiri.io/github/DEFRA/defra-ruby-alert/main.svg)](https://hakiri.io/github/DEFRA/defra-ruby-alert/main)
 [![Gem Version](https://badge.fury.io/rb/defra_ruby_alert.svg)](https://badge.fury.io/rb/defra_ruby_alert)
 [![Licence](https://img.shields.io/badge/Licence-OGLv3-blue.svg)](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3)
 
