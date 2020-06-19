@@ -11,7 +11,7 @@ Currently there are a number of Rails based digital services in Defra, all of wh
 
 This means we are often duplicating the code to configure and manage Airbrake across them. So we created this gem 😁!
 
-It's aim is to help us
+Its aim is to help us
 
 - start to reduce the duplication across projects
 - be consistent in how we configure and manage Airbrake
@@ -73,17 +73,17 @@ The gem has been designed to be used by our Rails apps, so we would also expect 
   config.environment = Rails.env
 ```
 
-### blacklist
+### blocklist
 
 > Specifies which keys in the payload (parameters, session data, environment data, etc) should be filtered. Before sending an error, filtered keys will be substituted with the [Filtered] label.
 
-Not every project uses this, but some do hence we provide the ability to specify a blacklist.
+Not every project uses this, but some do hence we provide the ability to specify a blocklist.
 
 ```ruby
-  config.blacklist = [/password/i, /postcode/i, :name]
+  config.blocklist = [/password/i, /postcode/i, :name]
 ```
 
-See Airbrake's [blacklist_keys](https://github.com/airbrake/airbrake-ruby#blacklist_keys) for more details.
+See Airbrake's [blocklist_keys](https://github.com/airbrake/airbrake-ruby#blocklist_keys) for more details.
 
 ## Usage
 

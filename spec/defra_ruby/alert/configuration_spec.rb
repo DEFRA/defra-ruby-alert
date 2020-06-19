@@ -14,7 +14,7 @@ module DefraRuby
 
         expect(fresh_config.host).to be_nil
         expect(fresh_config.project_key).to be_nil
-        expect(fresh_config.blacklist).to eq([])
+        expect(fresh_config.blocklist).to eq([])
         expect(fresh_config.enabled).to eq(false)
       end
     end

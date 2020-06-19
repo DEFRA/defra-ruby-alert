@@ -4,10 +4,10 @@ module DefraRuby
   module Alert
     class Configuration
       attr_accessor :root_directory, :logger, :environment
-      attr_accessor :host, :project_key, :blacklist, :enabled
+      attr_accessor :host, :project_key, :blocklist, :enabled
 
       def initialize
-        @blacklist = []
+        @blocklist = []
         @enabled = false
       end
     end
