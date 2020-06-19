@@ -62,8 +62,8 @@ module DefraRuby
           # A list of parameters that should be filtered out of what is sent to
           # Airbrake. By default, all "password" attributes will have their contents
           # replaced.
-          # https://github.com/airbrake/airbrake-ruby#blacklist_keys
-          c.blacklist_keys = DefraRuby::Alert.configuration.blacklist
+          # https://github.com/airbrake/airbrake-ruby#blocklist_keys
+          c.blocklist_keys = DefraRuby::Alert.configuration.blocklist
         end
       end
     end
