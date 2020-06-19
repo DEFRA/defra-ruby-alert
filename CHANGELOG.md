@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.1.0](https://github.com/defra/defra-ruby-alert/tree/v2.1.0) (2020-06-19)
+
+[Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v2.0.0...v2.1.0)
+
+**Merged pull requests:**
+
+- Rename blacklist to blocklist [\#10](https://github.com/DEFRA/defra-ruby-alert/pull/10) ([irisfaraway](https://github.com/irisfaraway))
+
 ## [v2.0.0](https://github.com/defra/defra-ruby-alert/tree/v2.0.0) (2020-06-04)
 
 [Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v1.0.0...v2.0.0)
