@@ -64,6 +64,13 @@ module DefraRuby
           # replaced.
           # https://github.com/airbrake/airbrake-ruby#blocklist_keys
           c.blocklist_keys = DefraRuby::Alert.configuration.blocklist
+
+          # Latest versions of Airbrake support performance stats being
+          # automatically sent to Airbrake. We actually use Errbit at Defra
+          # which doesn't support this feature. So all we see is lots of 404
+          # errors in our logs. To prevent this we disable this feature.
+          # https://github.com/airbrake/airbrake-ruby#performance_stats
+          c.performance_stats = false
         end
       end
     end

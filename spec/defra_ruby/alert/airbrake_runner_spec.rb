@@ -20,8 +20,10 @@ module DefraRuby
           :logger= => nil,
           :environment= => nil,
           :ignore_environments= => nil,
-          :blocklist_keys= => nil
+          :blocklist_keys= => nil,
+          :performance_stats= => nil,
         )
+        allow(configuration).to receive(:performance_stats)
 
         allow(Airbrake).to receive(:configure).and_yield(configuration)
       end
