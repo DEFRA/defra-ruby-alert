@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.1.1](https://github.com/defra/defra-ruby-alert/tree/v2.1.1) (2020-07-10)
+
+[Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v2.1.0...v2.1.1)
+
+**Merged pull requests:**
+
+- Disable performance stats [\#11](https://github.com/DEFRA/defra-ruby-alert/pull/11) ([Cruikshanks](https://github.com/Cruikshanks))
+
 ## [v2.1.0](https://github.com/defra/defra-ruby-alert/tree/v2.1.0) (2020-06-19)
 
 [Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v2.0.0...v2.1.0)
