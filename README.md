@@ -1,6 +1,6 @@
 # Defra Ruby Alert
 
-[![Build Status](https://travis-ci.com/DEFRA/defra-ruby-alert.svg?branch=main)](https://travis-ci.com/DEFRA/defra-ruby-alert)
+![Build Status](https://github.com/DEFRA/defra-ruby-alert/workflows/CI/badge.svg?branch=main)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_defra-ruby-alert&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_defra-ruby-alert)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_defra-ruby-alert&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_defra-ruby-alert)
 [![security](https://hakiri.io/github/DEFRA/defra-ruby-alert/main.svg)](https://hakiri.io/github/DEFRA/defra-ruby-alert/main)
