@@ -29,36 +29,46 @@ module DefraRuby
         allow(Airbrake).to receive(:configure).and_yield(configuration)
       end
 
-      let(:configuration) { double("Configuration") }
+      let(:configuration) { instance_double("Configuration") } # rubocop:disable RSpec/VerifiedDoubleReference
 
       let(:enabled) { true }
       let(:host) { "http://localhost:8005" }
       let(:project_key) { "ABC123456789" }
 
       describe ".invoke" do
-        it "configures Airbrake" do
-          expect(configuration).to receive(:host=).with(host)
-          expect(configuration).to receive(:project_key=).with(project_key)
+        before { allow(Airbrake).to receive(:add_filter) }
 
+        it "configures Airbrake with host" do
           described_class.invoke
+
+          expect(configuration).to have_received(:host=).with(host)
+        end
+
+        it "configures Airbrake with project_key" do
+          described_class.invoke
+
+          expect(configuration).to have_received(:project_key=).with(project_key)
         end
 
         context "when airbrake is enabled" do
           it "does not tell Airbrake to ignore everything" do
-            expect(Airbrake).not_to receive(:add_filter)
-
             described_class.invoke
+
+            expect(Airbrake).not_to have_received(:add_filter)
           end
         end
 
         context "when airbrake is not enabled" do
           let(:enabled) { false }
 
+          # rubocop:disable RSpec/MultipleExpectations
           it "tells Airbrake to ignore everything" do
-            expect(Airbrake).to receive(:add_filter) { |&block| expect(block).to be(&:ignore!) }
-
             described_class.invoke
+
+            expect(Airbrake).to have_received(:add_filter) { |&block| expect(block).to be(&:ignore!) }
           end
+          # rubocop:enable RSpec/MultipleExpectations
+
         end
       end
 
