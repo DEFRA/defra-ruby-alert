@@ -4,10 +4,8 @@ require "spec_helper"
 
 RSpec.describe DefraRuby::Alert do
   describe "VERSION" do
-    it "is a version string in the correct format" do
-      expect(DefraRuby::Alert::VERSION).to be_a(String)
-      expect(DefraRuby::Alert::VERSION).to match(/\d+\.\d+\.\d+/)
-    end
+    it { expect(DefraRuby::Alert::VERSION).to be_a(String) }
+    it { expect(DefraRuby::Alert::VERSION).to match(/\d+\.\d+\.\d+/) }
   end
 
   describe ".configuration" do
@@ -30,16 +28,19 @@ RSpec.describe DefraRuby::Alert do
 
   describe ".start" do
     before do
-      DefraRuby::Alert.configure do |c|
+      allow(DefraRuby::Alert::AirbrakeRunner).to receive(:invoke)
+
+      described_class.configure do |c|
         c.enabled = false
         c.host = "http://localhost:8005"
         c.project_key = "ABC123456789"
       end
     end
-    it "invokes 'AirbrakeRunner'" do
-      expect(DefraRuby::Alert::AirbrakeRunner).to receive(:invoke)
 
+    it "invokes 'AirbrakeRunner'" do
       described_class.start
+
+      expect(DefraRuby::Alert::AirbrakeRunner).to have_received(:invoke)
     end
   end
 end
