@@ -21,7 +21,8 @@ module DefraRuby
           :environment= => nil,
           :ignore_environments= => nil,
           :blocklist_keys= => nil,
-          :performance_stats= => nil
+          :performance_stats= => nil,
+          :remote_config= => nil
         )
         allow(configuration).to receive(:performance_stats)
 

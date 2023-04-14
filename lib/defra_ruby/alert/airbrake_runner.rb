@@ -71,6 +71,10 @@ module DefraRuby
           # errors in our logs. To prevent this we disable this feature.
           # https://github.com/airbrake/airbrake-ruby#performance_stats
           c.performance_stats = false
+
+          # Prevent Airbrake from trying to auto-load remote config from Airbrake servers
+          # as this fails (our projects are not on Airbrake) and disables Airbrake in the app
+          c.remote_config = false
         end
       end
     end
