@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased](https://github.com/defra/defra-ruby-alert/tree/HEAD)
+
+[Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v2.1.1...HEAD)
+
+**Merged pull requests:**
+
+- Bump gem version [\#15](https://github.com/DEFRA/defra-ruby-alert/pull/15) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Disable Airbrake remote\_config [\#14](https://github.com/DEFRA/defra-ruby-alert/pull/14) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Switch from Travis CI to GitHub Actions [\#13](https://github.com/DEFRA/defra-ruby-alert/pull/13) ([irisfaraway](https://github.com/irisfaraway))
+- Create Dependabot config file [\#12](https://github.com/DEFRA/defra-ruby-alert/pull/12) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [v2.1.1](https://github.com/defra/defra-ruby-alert/tree/v2.1.1) (2020-07-10)
 
 [Full Changelog](https://github.com/defra/defra-ruby-alert/compare/v2.1.0...v2.1.1)
